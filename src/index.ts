@@ -31,6 +31,24 @@ function filterProducts(productList: Product[]): Product[] {
 const filtredProducts: Product[] = filterProducts(products);
 
 
+
+function ExtractElementBetweenPositions(elements:number[], n:number, m:number):number[]{
+  const max:number = Math.max(n,m);
+  const min:number =  Math.min(n,m);
+  const r:number[] = [];
+  // for loop :
+  for( let i=min;i<=max;i++) r.push(elements[i]);
+  return r;
+};
+
+
+
+
+
+
+
+
+
 const arr: number[][] = [
   [1, 2, 3],
   [4, 5, 6],

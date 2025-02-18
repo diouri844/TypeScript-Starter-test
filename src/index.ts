@@ -44,6 +44,14 @@ function ExtractElementBetweenPositions(elements:number[], n:number, m:number):n
 
 
 
+function ExtractElementBetweenPositionsV2(elements:number[], n:number, m:number):number[]{
+  const max:number = Math.max(n,m);
+  const min:number =  Math.min(n,m);
+  return elements.slice(min,max+1);
+}
+
+
+
 
 
 
